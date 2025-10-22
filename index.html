@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://anaisdunand.github.io/portfolio-nina-carducci/">
+
 	<title>Nina Carducci Photographe - Bordeaux</title>
-	<meta name="description" content="Immortalisez vos plus beaux moments avec Nina Carducci, photographe professionnelle localisée à Bordeaux. Des clichés authentiques, lumineux et pleins d’émotion.">
+	<meta name="description" content="Immortalisez vos plus beaux moments avec Nina Carducci, photographe localisée à Bordeaux. Des clichés authentiques, lumineux et pleins d’émotion.">
 
 	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Nina Carducci Photographe">
 	<meta property="og:title" content="Nina Carducci Photographe - Bordeaux">
-	<meta property="og:description" content="Immortalisez vos plus beaux moments avec Nina Carducci, photographe professionnelle localisée à Bordeaux. Des clichés authentiques, lumineux et pleins d’émotion.">
+	<meta property="og:description" content="Immortalisez vos plus beaux moments avec Nina Carducci, photographe localisée à Bordeaux. Des clichés authentiques, lumineux et pleins d’émotion.">
 	<meta property="og:image" content="https://anaisdunand.github.io/portfolio-nina-carducci/assets/images/nina-socials.png">
 	<meta property="og:image:alt" content="Portrait de Nina Carducci">
 	<meta property="og:url" content="https://anaisdunand.github.io/portfolio-nina-carducci/">
@@ -18,7 +19,7 @@
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Nina Carducci Photographe - Bordeaux">
-	<meta name="twitter:description" content="Immortalisez vos plus beaux moments avec Nina Carducci, photographe professionnelle localisée à Bordeaux. Des clichés authentiques, lumineux et pleins d’émotion.">
+	<meta name="twitter:description" content="Immortalisez vos plus beaux moments avec Nina Carducci, photographe localisée à Bordeaux. Des clichés authentiques, lumineux et pleins d’émotion.">
 	<meta name="twitter:image" content="https://anaisdunand.github.io/portfolio-nina-carducci/assets/images/nina-socials.png">
 	<meta name="twitter:image:alt" content="Portrait de Nina Carducci">
 	<meta name="twitter:url" content="https://anaisdunand.github.io/portfolio-nina-carducci/">
@@ -54,21 +55,20 @@
 		}
 	</script>
 
-	<link rel="canonical" href="https://anaisdunand.github.io/portfolio-nina-carducci/">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.min.js"></script>
-	<script src="./assets/scripts.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<script type="module" src="./assets/scripts.min.js"></script>
 </head>
+
 <body>
 	<header>
-		<p class="name h3">Nina Carducci</p>
+		<h1 class="name h3" tabindex="0">Nina Carducci</h1>
 		<nav class="nav">   
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -85,114 +85,115 @@
 	</header>
 
 	<main>
-		<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		<section aria-label="Carrousel d'images">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+				<button class="toggle btn btn-outline-light" aria-label="Mettre le carrousel en pause" aria-pressed="false">I I</button>
+				<button class="carousel-control-prev" aria-label="Image précédente" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<div class="carousel-inner">
+					<figure class="carousel-item active" tabindex="0">
+						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" alt="Photographie d'un homme en costume marchant sur un passage piéton">
+					</figure>
+					<figure class="carousel-item">
+						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" alt="Photographie d'une foule de personnes souriantes lors d'un concert">
+					</figure>
+					<figure class="carousel-item">
+						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" alt="Photographie d'un couple s'embrassant à leur mariage, entouré d'une foule qui applaudit">
+					</figure>
+				</div>
+				<button class="carousel-control-next" aria-label="Image suivante" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Première image"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Deuxième image"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Troisième image"></button>
+				</div>
 			</div>
-			<div class="carousel-inner">
-				<figure class="carousel-item active">
-					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photographie d'un homme en costume marchant sur un passage piéton">
-				</figure>
-				<figure class="carousel-item">
-					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="Photographie d'une foule de personnes souriantes lors d'un concert">
-				</figure>
-				<figure class="carousel-item">
-					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Photographie d'un couple s'embrassant à leur mariage, entouré d'une foule qui applaudit">
-				</figure>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
 		</section>
 
 		<section id="about">
-			<figure class="picture">
+			<div class="about-container">
+				<h2 class="h3" tabindex="0">À propos de moi</h2>
+				<p class="intro h6" tabindex="0">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+				<p class="main" tabindex="0">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+			</div>
+			<figure class="picture" tabindex="0">
 				<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci, photographe à Bordeaux" loading="lazy">
 			</figure>
-			<div class="about-container">
-				<h1 class="h3">A propos de moi</h1>
-				<p class="intro h6">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-				<p class="main">Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-			</div>
 		</section>
 
 		<section id="gallery">
-			<h2 class="title h3">Portfolio</h2>
+			<h2 class="title h3" tabindex="0">Portfolio</h2>
 			<div class="gallery container py-3" style="display: none">
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Concerts" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photographie d'un concert sous des lumières orangées" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Entreprises" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Portait d'un homme en costume" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Entreprises" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Portrait d'une femme souriante dans un open space" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Mariages" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photographie de deux paires de mains se tenant" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Portraits" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait d'un homme aux yeux fermés" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Mariages" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photographie d'un couple de jeunes mariés, marchant main dans la main et souriant" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Portraits" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait d'une jeune femme portant des lunettes" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Concerts" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photographie d'un chanteur sur scène, entouré de fumée et de lumières, levant la main vers la foule" loading="lazy">
 				</figure>
-				<figure class="gallery-item">
+				<figure class="gallery-item" tabindex="0">
 					<img data-gallery-tag="Entreprises" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Portrait d'une jeune femme devant son ordinateur portable, riant" loading="lazy">
 				</figure>
 			</div>
-			<article class="quote">
-				<figure>
+			<aside class="quote">
+				<figure tabindex="0">
 					<blockquote>
 						<p class="h1">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 					</blockquote>
 					<figcaption>- Richard Avedon</figcaption>
 				</figure>
-			</article>
+			</aside>
 		</section>
 
 		<section id="services">
-			<h2 class="title h3">Mes services</h2>
+			<h2 class="title h3" tabindex="0">Mes services</h2>
 			<div class="container">
 				<article>
 					<div>
-						<h3>Shooting photo</h3>
-						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+						<h3 tabindex="0">Shooting photo</h3>
+						<p tabindex="0">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 					</div>
-					<div>
+					<div tabindex="0" role="group" aria-label="Prix">
 						<h4>350€/demi journée</h4>
 						<span>Matériel, déplacement inclus</span>
 					</div>
 				</article>
 				<article>
 					<div>
-						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+						<h3 tabindex="0">Retouches</h3>
+						<p tabindex="0">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 					</div>
-					<div>
+					<div tabindex="0" role="group" aria-label="Prix">
 						<h4>50€/photo</h4>
 						<span>2 AR par photo</span>
 					</div>
 				</article>
 				<article>
 					<div>
-						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+						<h3 tabindex="0">Album photos</h3>
+						<p tabindex="0">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 					</div>
-					<div>
+					<div tabindex="0" role="group" aria-label="Prix">
 						<h4>400€ album A4</h4>
 						<span>30 pages recto/verso</span>
 					</div>
@@ -200,20 +201,20 @@
 			</div>
 		</section>
 
-		<article class="quote">
-			<figure>
+		<aside class="quote">
+			<figure tabindex="0">
 				<blockquote>
 					<p class="h1">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption>- Richard Avedon</figcaption>
 			</figure>
-		</article>
+		</aside>
 
 		<section id="contact">
 			<div class="container">
 				<div class="form-container">
-					<h2 class="h3">Une question ? Une demande de devis ?</h2>
-					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+					<h2 class="h3" tabindex="0">Une question ? Une demande de devis ?</h2>
+					<p tabindex="0"> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="" method="post">
 						<label for="nom">Nom</label>
 						<input type="text" name="nom" id="nom" required>
@@ -224,7 +225,7 @@
 						<input type="submit" value="Envoyer">
 					</form>
 				</div>
-				<figure class="picture">
+				<figure class="picture" tabindex="0">
 					<img src="./assets/images/camera.webp" alt="Photographie d'un appareil photo de la marque Leica" loading="lazy">
 				</figure>
 			</div>
